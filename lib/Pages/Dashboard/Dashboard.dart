@@ -27,17 +27,6 @@ class MyDashboard extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          // ClipPath(
-          //   clipper: ShapeDashboard(),
-          //   child: Container(
-          //     height: 250,
-          //     width: MediaQuery.of(context).size.width,
-          //     decoration: BoxDecoration(
-          //         gradient: LinearGradient(
-          //           colors: <Color>[Colors.blue, Colors.blue.shade300],
-          //         )),
-          //   ),
-          // ),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
