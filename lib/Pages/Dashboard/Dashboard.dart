@@ -14,19 +14,30 @@ class MyDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 140,
+        backgroundColor: Colors.blue,
+        elevation: 4.0,
+        shadowColor: Colors.blue,
+        shape:RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16)
+        ),
+        title: Text("PortFolio",style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),
+        centerTitle: true,
+      ),
       body: Stack(
         children: [
-          ClipPath(
-            clipper: ShapeDashboard(),
-            child: Container(
-              height: 250,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: <Color>[Colors.blue, Colors.blue.shade300],
-                  )),
-            ),
-          ),
+          // ClipPath(
+          //   clipper: ShapeDashboard(),
+          //   child: Container(
+          //     height: 250,
+          //     width: MediaQuery.of(context).size.width,
+          //     decoration: BoxDecoration(
+          //         gradient: LinearGradient(
+          //           colors: <Color>[Colors.blue, Colors.blue.shade300],
+          //         )),
+          //   ),
+          // ),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
